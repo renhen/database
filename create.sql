@@ -92,7 +92,8 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `mydb`.`reception` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
-  `datetime` DATETIME NOT NULL,
+  `date` DATE NOT NULL,
+  `time` TIME NOT NULL,
   `fk_doctor_id` INT UNSIGNED NOT NULL,
   `fk_user_id` INT UNSIGNED NOT NULL,
   PRIMARY KEY (`id`),
