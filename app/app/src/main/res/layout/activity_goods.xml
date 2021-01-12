@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GoodsActivity">
+
+    <TextView
+        android:id="@+id/label_selectOpticalShop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Выберите салон оптики" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+    <Spinner
+        android:id="@+id/spin_OpticalShop"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:spinnerMode="dropdown" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+    <TextView
+        android:id="@+id/label_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Количество товаров в данном салоне оптики: " />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+    <ListView
+        android:id="@+id/listView_goods"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
